@@ -1,31 +1,23 @@
 package com.example.addressmatch.entity;
 
-import javax.persistence.*;
 import lombok.Data;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "table_d")
 public class TableD {
 
-    public enum Status {
-        PENDING,     // 待处理
-        CONFIRMED,   // 已确认有效
-        REJECTED     // 已驳回
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "address_b")
-    private String addressB;  // 原始地址
+    @Column(name = "b_id")
+    private Long bId;
 
-    @Enumerated(EnumType.STRING)
+    @Column(name = "address_b", columnDefinition = "TEXT", nullable = false)
+    private String addressB;          // B表地址
+
     @Column(name = "status")
-    private Status status;    // 状态
+    private String status = "PENDING"; // 状态：PENDING/ADDED/REJECTED
 }

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -19,15 +18,45 @@ public class MultiGranularityMatcher {
     @Autowired
     private AddressParserService addressParser;
 
+    // ================ 新增：缓存部分 ================
+    // 地址解析结果缓存（避免重复解析）
+    private final Map<String, List<String>> parseCache = new ConcurrentHashMap<>(256);
+
+    // 匹配结果缓存（避免重复匹配）
+    private final Map<String, List<MatchCandidate>> matchCache = new ConcurrentHashMap<>(256);
+
+    /**
+     * 清理缓存（每次匹配前调用）
+     */
+    public void clearCache() {
+        parseCache.clear();
+        matchCache.clear();
+        log.debug("已清理匹配器缓存");
+    }
+
+    /**
+     * 获取缓存统计信息
+     */
+    public Map<String, Object> getCacheStats() {
+        Map<String, Object> stats = new HashMap<>();
+        stats.put("parseCacheSize", parseCache.size());
+        stats.put("matchCacheSize", matchCache.size());
+        return stats;
+    }
+    // ================ 缓存部分结束 ================
+
     public List<MatchCandidate> matchAddress(String addressB, AddressTreeNode root) {
-        List<String> componentsB = addressParser.parseAddressComponents(addressB);
+        // 1. 先检查匹配结果缓存
+        List<MatchCandidate> cachedResult = matchCache.get(addressB);
+        if (cachedResult != null) {
+            return cachedResult; // 直接返回缓存结果
+        }
+
+        // 2. 解析地址（使用缓存）
+        List<String> componentsB = parseAddressWithCache(addressB);
         List<MatchCandidate> finalCandidates = new ArrayList<>();
 
-        log.debug("开始多粒度匹配，地址: {}", addressB);
-
         for (int granularity = 1; granularity <= componentsB.size(); granularity++) {
-            log.debug("正在第{}级粒度匹配...", granularity);
-
             List<MatchCandidate> levelCandidates = matchAtGranularity(
                     componentsB.subList(0, granularity), root);
 
@@ -39,15 +68,28 @@ public class MultiGranularityMatcher {
                 levelCandidates = rankAndDeduplicate(levelCandidates);
 
                 if (hasHighConfidenceMatch(levelCandidates)) {
-                    log.debug("在第{}级找到高置信度匹配，提前终止", granularity);
-                    return levelCandidates.subList(0, Math.min(5, levelCandidates.size()));
+                    // 缓存高置信度匹配结果
+                    List<MatchCandidate> result = levelCandidates.subList(0, Math.min(5, levelCandidates.size()));
+                    matchCache.put(addressB, result);
+                    return result;
                 }
 
                 finalCandidates = levelCandidates;
             }
         }
 
+        // 缓存最终结果
+        matchCache.put(addressB, finalCandidates);
         return finalCandidates;
+    }
+
+    /**
+     * 带缓存的地址解析方法
+     */
+    private List<String> parseAddressWithCache(String address) {
+        return parseCache.computeIfAbsent(address, key -> {
+            return addressParser.parseAddressComponents(key);
+        });
     }
 
     private List<MatchCandidate> matchAtGranularity(List<String> components,
@@ -57,6 +99,7 @@ public class MultiGranularityMatcher {
 
         for (AddressTreeNode node : matchingNodes) {
             for (TableA address : node.getAddresses()) {
+                // 计算匹配分数（表A地址也使用缓存解析）
                 double score = calculateMatchScore(components, address, node);
                 candidates.add(new MatchCandidate(address, score));
             }
@@ -110,7 +153,8 @@ public class MultiGranularityMatcher {
     private double calculateMatchScore(List<String> componentsB,
                                        TableA addressA,
                                        AddressTreeNode matchedNode) {
-        List<String> componentsA = addressParser.parseAddressComponents(addressA.getAddressA());
+        // 表A地址也使用缓存解析
+        List<String> componentsA = parseAddressWithCache(addressA.getAddressA());
 
         int exactMatches = 0;
         int totalLevels = Math.max(componentsA.size(), componentsB.size());
