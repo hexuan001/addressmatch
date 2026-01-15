@@ -28,7 +28,7 @@ public class AddressMatchService {
         log.info("=== 开始地址匹配（缓存优化版） ===");
 
         try {
-            // ================ 新增：清理缓存 ================
+            // ================ 清理缓存 ================
             matcher.clearCache();
             log.info("已清理匹配器缓存");
             // ==============================================
@@ -258,14 +258,14 @@ public class AddressMatchService {
     }
 
     /**
-     * 获取缓存统计信息（新增）
+     * 获取缓存统计信息
      */
     public Map<String, Object> getCacheStats() {
         return matcher.getCacheStats();
     }
 
     /**
-     * 清理缓存（新增）
+     * 清理缓存
      */
     public void clearMatcherCache() {
         matcher.clearCache();
