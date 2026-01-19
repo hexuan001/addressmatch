@@ -11,7 +11,7 @@ public class CommonUtils {
             Pattern.compile("(.*?(区|县|县级市|自治县))"),
             Pattern.compile("(.*?(街道|镇|乡))"),
             Pattern.compile("(.*?(社区|村|居委会))"),
-            Pattern.compile("(.*?(路|街|大道|胡同|巷))"),
+            Pattern.compile("(.*?(路|街|大道|胡同|巷|小区|家园))"),
             Pattern.compile("(\\d+号楼?|\\d+栋|\\d+幢|\\d+座)"),
             Pattern.compile("(\\d+单元|\\d+门)"),
             Pattern.compile("(\\d+室|\\d+号|\\d+户)")

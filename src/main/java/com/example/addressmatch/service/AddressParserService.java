@@ -27,7 +27,6 @@ public class AddressParserService {
                 String component = matcher.group(1);
                 components.add(component);
                 remaining = remaining.substring(matcher.end()).trim();
-
                 if (remaining.startsWith("市辖区")) {
                     remaining = remaining.substring(3);
                 }

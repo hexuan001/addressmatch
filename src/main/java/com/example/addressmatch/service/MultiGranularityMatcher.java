@@ -18,7 +18,7 @@ public class MultiGranularityMatcher {
     @Autowired
     private AddressParserService addressParser;
 
-    // ================ 新增：缓存部分 ================
+    // ================ 缓存部分 ================
     // 地址解析结果缓存（避免重复解析）
     private final Map<String, List<String>> parseCache = new ConcurrentHashMap<>(256);
 
