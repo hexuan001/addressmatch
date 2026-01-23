@@ -1,3 +1,645 @@
 2026-01-19 09:20:30 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 18496 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
 2026-01-19 09:20:30 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
 2026-01-19 09:20:33 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 3.706 seconds (JVM running for 4.66)
+2026-01-19 11:07:17 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 20116 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
+2026-01-19 11:07:17 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 11:07:21 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 5.292 seconds (JVM running for 6.286)
+2026-01-19 11:10:02 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 15388 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
+2026-01-19 11:10:02 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 11:10:05 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 4.195 seconds (JVM running for 5.224)
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 34ms
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 83ms, 表A:684条, 表B:525条
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共684条地址
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 101ms
+2026-01-19 11:10:23 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/525 (9%), 耗时: 44ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/525 (19%), 耗时: 67ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/525 (29%), 耗时: 106ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/525 (39%), 耗时: 137ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/525 (49%), 耗时: 174ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/525 (59%), 耗时: 206ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/525 (69%), 耗时: 245ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/525 (79%), 耗时: 286ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/525 (89%), 耗时: 321ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/525 (99%), 耗时: 353ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 356ms
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=57, 平均速度={:.1f}条/秒
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=526条, 匹配缓存=525条
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表D: 57条
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 403ms
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 总耗时: 982ms ({:.1f}秒)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   清空数据: 34ms (3%)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   加载数据: 83ms (8%)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   构建地址树: 101ms (10%)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   匹配计算: 356ms (36%)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   批量保存: 403ms (41%)
+2026-01-19 11:10:24 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 45ms
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 9ms, 表A:684条, 表B:525条
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共684条地址
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 84ms
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/525 (9%), 耗时: 38ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/525 (19%), 耗时: 58ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/525 (29%), 耗时: 100ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/525 (39%), 耗时: 143ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/525 (49%), 耗时: 177ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:30 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/525 (59%), 耗时: 210ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/525 (69%), 耗时: 241ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/525 (79%), 耗时: 272ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/525 (89%), 耗时: 304ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/525 (99%), 耗时: 338ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 344ms
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=57, 平均速度={:.1f}条/秒
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=526条, 匹配缓存=525条
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 保存表D: 57条
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 128ms
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 总耗时: 611ms ({:.1f}秒)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   清空数据: 45ms (7%)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   加载数据: 9ms (1%)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   构建地址树: 84ms (13%)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   匹配计算: 344ms (56%)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   批量保存: 128ms (20%)
+2026-01-19 11:10:31 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 13ms
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:684条, 表B:525条
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共684条地址
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 77ms
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/525 (9%), 耗时: 34ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/525 (19%), 耗时: 52ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/525 (29%), 耗时: 86ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/525 (39%), 耗时: 124ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/525 (49%), 耗时: 172ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/525 (59%), 耗时: 213ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/525 (69%), 耗时: 246ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/525 (79%), 耗时: 276ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/525 (89%), 耗时: 309ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/525 (99%), 耗时: 343ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 346ms
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=57, 平均速度={:.1f}条/秒
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=526条, 匹配缓存=525条
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表D: 57条
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 128ms
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 总耗时: 575ms ({:.1f}秒)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   清空数据: 13ms (2%)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (1%)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   构建地址树: 77ms (13%)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   匹配计算: 346ms (60%)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   批量保存: 128ms (22%)
+2026-01-19 11:10:37 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 10ms
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:684条, 表B:525条
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共684条地址
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 76ms
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/525 (9%), 耗时: 36ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/525 (19%), 耗时: 55ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/525 (29%), 耗时: 95ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/525 (39%), 耗时: 133ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/525 (49%), 耗时: 171ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/525 (59%), 耗时: 206ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/525 (69%), 耗时: 238ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/525 (79%), 耗时: 268ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/525 (89%), 耗时: 301ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/525 (99%), 耗时: 331ms, 速度: {:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 335ms
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=57, 平均速度={:.1f}条/秒
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=526条, 匹配缓存=525条
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表D: 57条
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 150ms
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 总耗时: 580ms ({:.1f}秒)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   清空数据: 10ms (1%)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (1%)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   构建地址树: 76ms (13%)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   匹配计算: 335ms (57%)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   批量保存: 150ms (25%)
+2026-01-19 11:10:40 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 11:18:18 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 6248 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
+2026-01-19 11:18:18 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 11:18:21 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 3.086 seconds (JVM running for 3.766)
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 113ms
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 18ms, 表A:685条, 表B:526条
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 89ms
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 43ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 62ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 105ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 137ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 171ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 205ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 246ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 290ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 326ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 359ms, 速度: {:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 408ms
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 11:18:25 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 275ms
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 总耗时: 908ms ({:.1f}秒)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   清空数据: 113ms (12%)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   加载数据: 18ms (1%)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   构建地址树: 89ms (9%)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   匹配计算: 408ms (44%)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   批量保存: 275ms (30%)
+2026-01-19 11:18:26 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 18ms
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 7ms, 表A:685条, 表B:526条
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 77ms
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 39ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 59ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 98ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 126ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 156ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 185ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 214ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 243ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 271ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:23 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 302ms, 速度: {:.1f}条/秒
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 347ms
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 116ms
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 总耗时: 567ms ({:.1f}秒)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   清空数据: 18ms (3%)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   加载数据: 7ms (1%)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   构建地址树: 77ms (13%)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   匹配计算: 347ms (61%)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   批量保存: 116ms (20%)
+2026-01-19 11:19:24 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 13:31:26 [AddressMatchHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - AddressMatchHikariCP - Thread starvation or clock leap detected (housekeeper delta=51m35s46ms113µs400ns).
+2026-01-19 17:23:23 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 15480 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
+2026-01-19 17:23:23 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 17:23:26 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 3.041 seconds (JVM running for 3.857)
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 389ms
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 52ms, 表A:685条, 表B:526条
+2026-01-19 17:23:35 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 204ms
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 51ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 71ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 106ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 143ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 173ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 205ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 246ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 279ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 312ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 346ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 397ms
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 230ms
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 总耗时: 1278ms ({:.1f}秒)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   清空数据: 389ms (30%)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   加载数据: 52ms (4%)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   构建地址树: 204ms (15%)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   匹配计算: 397ms (31%)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   批量保存: 230ms (17%)
+2026-01-19 17:23:36 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 19ms
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:685条, 表B:526条
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 78ms
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 36ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 55ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:49 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 88ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 117ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 146ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 177ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 211ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 241ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 272ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 301ms, 速度: {:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 345ms
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 120ms
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 总耗时: 572ms ({:.1f}秒)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   清空数据: 19ms (3%)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (1%)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   构建地址树: 78ms (13%)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   匹配计算: 345ms (60%)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   批量保存: 120ms (20%)
+2026-01-19 17:23:50 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 10ms
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 9ms, 表A:685条, 表B:526条
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 82ms
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 38ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 57ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 97ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 126ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 157ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 188ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 220ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 253ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 284ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 317ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 373ms
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 113ms
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 总耗时: 590ms ({:.1f}秒)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   清空数据: 10ms (1%)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   加载数据: 9ms (1%)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   构建地址树: 82ms (13%)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   匹配计算: 373ms (63%)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   批量保存: 113ms (19%)
+2026-01-19 17:38:12 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 11ms
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:685条, 表B:526条
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 74ms
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 35ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 52ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 86ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 114ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 148ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 179ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 208ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 236ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 267ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 295ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 349ms
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:38:14 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 390ms
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 总耗时: 832ms ({:.1f}秒)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   清空数据: 11ms (1%)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (0%)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   构建地址树: 74ms (8%)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   匹配计算: 349ms (41%)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   批量保存: 390ms (46%)
+2026-01-19 17:38:15 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 10ms
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:685条, 表B:526条
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 75ms
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 35ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 54ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 89ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:17 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 118ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 151ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 189ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 227ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 262ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 293ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 326ms, 速度: {:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 376ms
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 113ms
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 总耗时: 583ms ({:.1f}秒)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService -   清空数据: 10ms (1%)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (1%)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService -   构建地址树: 75ms (12%)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService -   匹配计算: 376ms (64%)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService -   批量保存: 113ms (19%)
+2026-01-19 17:38:18 [http-nio-8080-exec-7] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 12ms
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 11ms, 表A:685条, 表B:526条
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 74ms
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 39ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 60ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 100ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 138ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 169ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 199ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 231ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 262ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 296ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 326ms, 速度: {:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 374ms
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 111ms
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 总耗时: 584ms ({:.1f}秒)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService -   清空数据: 12ms (2%)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService -   加载数据: 11ms (1%)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService -   构建地址树: 74ms (12%)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService -   匹配计算: 374ms (64%)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService -   批量保存: 111ms (19%)
+2026-01-19 17:43:36 [http-nio-8080-exec-10] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:44:48 [main] INFO  c.e.a.AddressmatchApplication - Starting AddressmatchApplication using Java 17 on WINDOWS-B30I6L3 with PID 25500 (E:\addressmatch\target\classes started by EDY in E:\addressmatch)
+2026-01-19 17:44:48 [main] INFO  c.e.a.AddressmatchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 17:44:51 [main] INFO  c.e.a.AddressmatchApplication - Started AddressmatchApplication in 3.109 seconds (JVM running for 3.799)
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 142ms
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 19ms, 表A:685条, 表B:526条
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 124ms
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 66ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 99ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 161ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 215ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 275ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 324ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 376ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 427ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 482ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:57 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 530ms, 速度: {:.1f}条/秒
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 606ms
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 363ms
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 总耗时: 1260ms ({:.1f}秒)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   清空数据: 142ms (11%)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   加载数据: 19ms (1%)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   构建地址树: 124ms (9%)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   匹配计算: 606ms (48%)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService -   批量保存: 363ms (28%)
+2026-01-19 17:44:58 [http-nio-8080-exec-1] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 16ms
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 9ms, 表A:685条, 表B:526条
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:45:08 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 75ms
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 39ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 57ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 96ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 134ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 179ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 220ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 250ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 283ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 314ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 349ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 405ms
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 113ms
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 总耗时: 618ms ({:.1f}秒)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   清空数据: 16ms (2%)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   加载数据: 9ms (1%)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   构建地址树: 75ms (12%)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   匹配计算: 405ms (65%)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService -   批量保存: 113ms (18%)
+2026-01-19 17:45:09 [http-nio-8080-exec-3] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 14ms
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 7ms, 表A:685条, 表B:526条
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 78ms
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 37ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 58ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 100ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 137ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 175ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 211ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 243ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 278ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:11 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 310ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 362ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 427ms
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 167ms
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 总耗时: 694ms ({:.1f}秒)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   清空数据: 14ms (2%)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   加载数据: 7ms (1%)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   构建地址树: 78ms (11%)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   匹配计算: 427ms (61%)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService -   批量保存: 167ms (24%)
+2026-01-19 17:45:12 [http-nio-8080-exec-2] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 10ms
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 10ms, 表A:685条, 表B:526条
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 80ms
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 37ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 57ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 95ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 130ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 171ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 207ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 239ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 271ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 302ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 335ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 396ms
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 124ms
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 总耗时: 620ms ({:.1f}秒)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   清空数据: 10ms (1%)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   加载数据: 10ms (1%)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   构建地址树: 80ms (12%)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   匹配计算: 396ms (63%)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService -   批量保存: 124ms (20%)
+2026-01-19 17:45:14 [http-nio-8080-exec-4] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 10ms
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 7ms, 表A:685条, 表B:526条
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 78ms
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 36ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 56ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 97ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 131ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 170ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 209ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 246ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 275ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 305ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 334ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 395ms
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 122ms
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 总耗时: 613ms ({:.1f}秒)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   清空数据: 10ms (1%)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   加载数据: 7ms (1%)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   构建地址树: 78ms (12%)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   匹配计算: 395ms (64%)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService -   批量保存: 122ms (19%)
+2026-01-19 17:45:18 [http-nio-8080-exec-5] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 9ms
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 8ms, 表A:685条, 表B:526条
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:45:23 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 75ms
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 38ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 56ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 92ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 123ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 162ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 201ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 233ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 262ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 296ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 327ms, 速度: {:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 381ms
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 113ms
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 总耗时: 587ms ({:.1f}秒)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   清空数据: 9ms (1%)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   加载数据: 8ms (1%)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   构建地址树: 75ms (12%)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   匹配计算: 381ms (64%)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService -   批量保存: 113ms (19%)
+2026-01-19 17:45:24 [http-nio-8080-exec-6] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.controller.MatchController - 执行性能监控匹配
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - === 开始地址匹配（缓存优化版） ===
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 已清理匹配器缓存
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 阶段1-清空数据: 13ms
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 阶段2-加载数据: 7ms, 表A:685条, 表B:526条
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressTreeBuilder - 开始构建地址树，共685条地址
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressTreeBuilder - 地址树构建完成
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 阶段3-构建地址树: 80ms
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 52/526 (9%), 耗时: 37ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 104/526 (19%), 耗时: 58ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 156/526 (29%), 耗时: 93ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 208/526 (39%), 耗时: 128ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 260/526 (49%), 耗时: 159ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 312/526 (59%), 耗时: 189ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 364/526 (69%), 耗时: 220ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 416/526 (79%), 耗时: 251ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 468/526 (88%), 耗时: 282ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配进度: 520/526 (98%), 耗时: 315ms, 速度: {:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 阶段4-匹配计算完成: 369ms
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 匹配统计: 成功=468, 失败=58, 平均速度={:.1f}条/秒
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 缓存统计: 解析缓存=527条, 匹配缓存=526条
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 保存表C: 468条
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 保存表D: 58条
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 阶段5-批量保存: 111ms
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - === 匹配完成 ===
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 总耗时: 580ms ({:.1f}秒)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 各阶段耗时占比:
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService -   清空数据: 13ms (2%)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService -   加载数据: 7ms (1%)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService -   构建地址树: 80ms (13%)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService -   匹配计算: 369ms (63%)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService -   批量保存: 111ms (19%)
+2026-01-19 17:58:36 [http-nio-8080-exec-9] INFO  c.e.a.service.AddressMatchService - 平均速度: {:.1f}条/秒

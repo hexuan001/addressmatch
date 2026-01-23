@@ -141,7 +141,7 @@ public class AddressMatchService {
             log.info("匹配统计: 成功={}, 失败={}, 平均速度={:.1f}条/秒",
                     successMatch, failedMatch, tableBList.size() * 1000.0 / stage4Time);
 
-            // ================ 新增：输出缓存统计 ================
+            // ================ 输出缓存统计 ================
             Map<String, Object> cacheStats = matcher.getCacheStats();
             log.info("缓存统计: 解析缓存={}条, 匹配缓存={}条",
                     cacheStats.get("parseCacheSize"), cacheStats.get("matchCacheSize"));

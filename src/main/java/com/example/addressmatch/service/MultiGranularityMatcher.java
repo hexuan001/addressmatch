@@ -57,8 +57,7 @@ public class MultiGranularityMatcher {
         List<MatchCandidate> finalCandidates = new ArrayList<>();
 
         for (int granularity = 1; granularity <= componentsB.size(); granularity++) {
-            List<MatchCandidate> levelCandidates = matchAtGranularity(
-                    componentsB.subList(0, granularity), root);
+            List<MatchCandidate> levelCandidates = matchAtGranularity(componentsB.subList(0, granularity), root);
 
             if (levelCandidates.isEmpty()) {
                 levelCandidates = relaxMatchConditions(componentsB.subList(0, granularity), root);
